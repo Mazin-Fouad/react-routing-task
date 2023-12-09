@@ -1,0 +1,42 @@
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--primary-textColor);
+}
+
+span {
+  padding: 0 4px;
+  color: var(--secondary-textColor);
+}
+
+div span:nth-child(2) {
+  font-size: 40px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.tracking-in-contract {
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
