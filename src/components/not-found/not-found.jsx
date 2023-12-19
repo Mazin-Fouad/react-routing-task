@@ -4,6 +4,11 @@ import './not-found.css';
 
 class NotFound extends Component {
     state = {  } 
+    /**
+     * Renders the component.
+     *
+     * @return {JSX.Element} The rendered component.
+     */
     render() { 
         return (
         <div className="not-found">
