@@ -7,8 +7,8 @@ class MainPage extends Component {
     state = {  } 
     render() { 
         return (<div>
-            <h1 className='tracking-in-contract'>Hello binary<span className='bold'>:</span>state team from Main Page <span>&gt;_</span></h1>
-            <Link className='link' to="/about">Go to about us page</Link>
+            <h1 className='tracking-in-contract'>Hello binary<span className='bold'>:</span>state from Main Page <span>&gt;_</span></h1>
+            <Link className='link' to="/about">Go to About us page</Link>
 
         </div>);
     }
