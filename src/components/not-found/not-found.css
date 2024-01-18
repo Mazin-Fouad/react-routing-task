@@ -4,8 +4,38 @@
   align-items: center;
   justify-content: center;
   color: var(--primary-textColor);
+  text-align: center;
+  width: 100%;
+  min-height: 100dvh;
+  background-image: url('../../assets/imgs/binary_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-.not-found h2 {
+.not-found::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+h1,
+h2,
+.link {
+  z-index: 2;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+h2 {
   margin-bottom: 20px;
 }

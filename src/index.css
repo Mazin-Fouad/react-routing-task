@@ -14,22 +14,16 @@
   font-style: normal;
 }
 
-/* Sets a default font family for the entire application with a fallback to a generic sans-serif font */
-body {
-  font-family: 'Roboto-Regular', sans-serif;
-}
-
 /* Defines CSS custom properties (variables) for consistent theming and easier maintainability */
 :root {
-  --primary-bgColor: rgb(2, 0, 36);
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(71, 42, 20, 1) 92%);
+  --primery-background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(71, 42, 20, 1) 92%);
   --primary-textColor: #fff;
   --secondary-textColor: #93592e;
 }
 
-#root {
-  min-height: 100dvh;
+/* Sets a default font family for the entire application with a fallback to a generic sans-serif font */
+body {
+  font-family: 'Roboto-Regular', sans-serif;
 }
 
 /* Global link styling for all links in the project*/
@@ -41,6 +35,7 @@ body {
   border-bottom: 2px solid transparent;
   transition: border-bottom 225ms ease-in-out;
 }
+
 .link:hover {
   border-bottom: 2px solid var(--secondary-textColor);
 }
