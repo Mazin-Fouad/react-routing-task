@@ -10,8 +10,18 @@
   background-image: url('../../assets/imgs/binary_bg.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   position: relative;
+  animation: backgroundZoom 10s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundZoom {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 110%;
+  }
 }
 
 .not-found::before {
@@ -31,11 +41,11 @@ h2,
   z-index: 2;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
+.not-found h1 {
+  font-size: 4rem;
+  margin-bottom: 0.2em;
 }
 
-h2 {
-  margin-bottom: 20px;
+.not-found h2 {
+  margin-bottom: 1em;
 }

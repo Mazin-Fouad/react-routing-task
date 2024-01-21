@@ -1,11 +1,11 @@
-/* Global Reset */
+/* Reset Brwoser defaults */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Font Face Declaration */
+/* Custom @font-face declaration for 'Roboto-Regular' with multiple source formats for compatibility */
 @font-face {
   font-family: 'Roboto-Regular';
   src: local('MyCustomFont'), url('./assets/fonts/Roboto-Regular.ttf') format('woff2'), url('./assets/fonts/Roboto-Regular.ttf') format('woff'),
@@ -14,14 +14,14 @@
   font-style: normal;
 }
 
-/* Defines CSS custom properties (variables) for consistent theming and easier maintainability */
+/* CSS custom properties (variables) for consistent theming and easier maintainability */
 :root {
   --primery-background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(71, 42, 20, 1) 92%);
   --primary-textColor: #fff;
   --secondary-textColor: #93592e;
 }
 
-/* Sets a default font family for the entire application with a fallback to a generic sans-serif font */
+/* Default font family set for the body element, with 'Roboto-Regular' and fallback to sans-serif */
 body {
   font-family: 'Roboto-Regular', sans-serif;
 }
